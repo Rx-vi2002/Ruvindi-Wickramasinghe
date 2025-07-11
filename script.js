@@ -44,12 +44,12 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Form submission handling
-const contactForm = document.getElementById("contact-form");
-if (contactForm) {
-  contactForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    // Add form submission logic here
-    alert("Form submitted successfully!");
-    contactForm.reset();
-  });
-}
+//const contactForm = document.getElementById("contact-form");
+//if (contactForm) {
+//contactForm.addEventListener("submit", (e) => {
+//e.preventDefault();
+// Add form submission logic here
+//alert("Form submitted successfully!");
+//contactForm.reset();
+//});
+//}
