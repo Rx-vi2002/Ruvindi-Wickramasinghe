@@ -5,7 +5,6 @@ Welcome to the source code of my **personal portfolio website**, built to showca
 🔗 **Live Site**: [https://rx-vi2002.github.io/Ruvindi-Wickramasinghe/](https://rx-vi2002.github.io/Ruvindi-Wickramasinghe/)
 
 ---
-
 ## 📌 About
 
 This portfolio is designed to serve as a central hub for:
