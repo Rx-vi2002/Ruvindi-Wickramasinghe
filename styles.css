@@ -579,7 +579,7 @@ nav {
 /* Footer */
 footer {
   background: var(--header-bg);
-  color: white;
+  color: rgb(73, 71, 71);
   padding: 2rem 0;
   text-align: center;
   transition: background-color 0.3s ease;
@@ -598,7 +598,7 @@ footer {
 }
 
 .social-links a {
-  color: white;
+  color: rgb(73, 71, 71);
   font-size: 1.5rem;
   transition: color 0.3s ease;
 }
