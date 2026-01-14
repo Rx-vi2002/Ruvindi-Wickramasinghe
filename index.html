@@ -1,224 +1,308 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ruvindi Wickramasinghe - Portfolio</title>
+    <title>Ruvindi Wickramasinghe | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body oncontextmenu="return false">
-    <header>
-      <nav>
-        <div class="logo">Ruvindi</div>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="logo">Ruvindi<span>W</span></a>
+        <nav class="nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
         <div class="theme-toggle">
           <i class="fas fa-moon"></i>
-          <span class="toggle-text">Dark Mode</span>
+          <i class="fas fa-sun"></i>
+          <span class="toggle-ball"></span>
         </div>
         <div class="hamburger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-      </nav>
+      </div>
     </header>
 
-    <main class="container">
-      <!-- Home/Hero Section -->
-      <section id="home" class="hero">
-        <div class="hero-content">
-          <h1>
-            Hey, It's Me <span>Ruvindi<br />Wickramasinghe</span>
-          </h1>
-          <h2>
-            and I'm a
-            <span class="typing-text">Cybersecurity Undergraduate</span>
-          </h2>
-          <p>
-            Hello! I am an undergraduate student currently pursuing a BSc (Hons)
-            Information Technology Specializing Cyber Security degree at SLIIT &
-            Higher Diploma in Computing and Software Engineering at Cardiff
-            Metropolitan University.
-          </p>
-          <br />
-          <a href="Ruvindi_CV.pdf" class="btn" id="download-cv">DOWNLOAD CV</a>
-        </div>
-        <div class="hero-image">
-          <div class="image-container">
-            <img
-              src="Me.jpg"
-              alt="Ruvindi Wickramasinghe"
-              class="profile-image"
-            />
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero-section">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text animate-slide-up">
+              <h1>Hey, It's Me <span>Ruvindi Wickramasinghe</span></h1>
+              <h2 class="typing-text">
+                Cybersecurity Undergraduate & Developer
+              </h2>
+              <p>
+                Hello! I am an undergraduate student currently pursuing a BSc
+                (Hons) Information Technology Specializing Cyber Security degree
+                at SLIIT & Higher Diploma in Computing and Software Engineering
+                at Cardiff Metropolitan University.
+              </p>
+              <div class="hero-buttons">
+                <a href="Ruvindi_CV.pdf" class="btn btn-primary">
+                  <i class="fas fa-download"></i> Download CV
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                  <i class="fas fa-envelope"></i> Contact Me
+                </a>
+              </div>
+              <div class="hero-stats">
+                <div class="stat">
+                  <span class="stat-number" data-count="15">0</span>
+                  <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number" data-count="10">0</span>
+                  <span class="stat-label">Certifications</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number" data-count="5">0</span>
+                  <span class="stat-label">Articles</span>
+                </div>
+              </div>
+            </div>
+            <div class="hero-image animate-slide-up delay-1">
+              <div class="image-container">
+                <div class="image-decoration"></div>
+                <div class="image-frame">
+                  <img src="Me.jpg" alt="Ruvindi Wickramasinghe" />
+                </div>
+                <div class="image-badge">
+                  <i class="fas fa-shield-alt"></i>
+                  <span>Cybersecurity</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- About Section -->
       <section id="about" class="about-section">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-          <div class="about-text">
-            <p class="tagline">
-              Passionate about Software Development, Web Development, Database
-              Administration, and Cybersecurity. Skilled in Frontend & Backend
-              Technologies, Databases, and Programming Languages, with hands-on
-              experience in cybersecurity concepts such as network security,
-              Ethical Hacking, Vulnerability Assessment, and Secure Coding
-              Practices.
-            </p>
-            <p>
-              Eager to apply technical expertise in a professional setting while
-              further developing cybersecurity skills.
-            </p>
-            <br />
+        <div class="container">
+          <h2 class="section-title animate-slide-up">About Me</h2>
+          <div class="about-content">
+            <div class="about-text animate-slide-up delay-1">
+              <p>
+                I am an undergraduate student pursuing a BSc (Hons) Information
+                Technology specializing in Cyber Security at SLIIT & Higher
+                Diploma in Computing and Software Engineering at Cardiff
+                Metropolitan University.
+              </p>
+              <p>
+                Eager to apply technical expertise in a professional setting
+                while further developing cybersecurity skills in areas such as
+                network security, Ethical Hacking, Vulnerability Assessment, and
+                Secure Coding Practices.
+              </p>
+              <br />
 
-            <div class="tech-stack">
-              <h4>Skills:</h4>
-              <div class="skills-container">
-                <span class="skill-pill">HTML5</span>
-                <span class="skill-pill">CSS</span>
-                <span class="skill-pill">JavaScript</span>
-                <span class="skill-pill">PHP</span>
-                <span class="skill-pill">SQL</span>
-                <span class="skill-pill">C</span>
-                <span class="skill-pill">C++</span>
-                <span class="skill-pill">Python</span>
-                <span class="skill-pill">Java</span>
+              <div class="education-timeline">
+                <h3>Education</h3>
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <div class="timeline-icon">
+                      <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                      <h4>Sri Lanka Institute of Information Technology</h4>
+                      <span class="timeline-date">2023 - 2027</span>
+                      <p>
+                        BSc in Information Technology specializing in Cyber
+                        Security
+                      </p>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-icon">
+                      <i class="fas fas fa-scroll"></i>
+                    </div>
+                    <div class="timeline-content">
+                      <h4>Cardiff Metropolitan University</h4>
+                      <span class="timeline-date">2023 - 2024</span>
+                      <p>
+                        Higher Diploma in Computing and Software Engineering
+                      </p>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-icon">
+                      <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="timeline-content">
+                      <h4>SLTCA Vocational Training Institute</h4>
+                      <span class="timeline-date">2022</span>
+                      <p>Certificate in Computer Science & Graphic Design</p>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-icon">
+                      <i class="fas fa-school"></i>
+                    </div>
+                    <div class="timeline-content">
+                      <h4>Mahamaya Balika Vidyalaya - Nugegoda</h4>
+                      <span class="timeline-date">2019 - 2021</span>
+                      <p>
+                        Passed GCE Advanced Level in Engineering Technology
+                        Stream with 3C's
+                      </p>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-icon">
+                      <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="timeline-content">
+                      <h4>Girls' High School - Mount Lavinia</h4>
+                      <span class="timeline-date">2008 - 2018</span>
+                      <p>Passed GCE Ordinary Level with 1A, 1B, 6C's and 1S</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="education">
-            <h3>Education</h3>
-            <div class="education-list">
-              <div class="education-item">
-                <div class="education-header">
-                  <img
-                    src="sliit-10.png"
-                    alt="SLIIT Logo"
-                    class="education-logo"
-                  />
-                  <div>
-                    <h4>Sri Lanka Institute of Information Technology</h4>
-                    <span class="education-date">2023 - 2027</span>
-                  </div>
-                </div>
-                <p>
-                  BSc in Information Technology specializing in Cyber Security
-                </p>
-              </div>
-
-              <div class="education-divider"></div>
-
-              <div class="education-item">
-                <div class="education-header">
-                  <img
-                    src="cmu-10.png"
-                    alt="Cardiff Metropolitan University Logo"
-                    class="education-logo"
-                  />
-                  <div>
-                    <h4>Cardiff Metropolitan University</h4>
-                    <span class="education-date">2023 - 2024</span>
-                  </div>
-                </div>
-                <p>Higher Diploma in Computing and Software Engineering</p>
-              </div>
-
-              <div class="education-divider"></div>
-
-              <div class="education-item">
-                <div class="education-header">
-                  <img
-                    src="sltca-10.png"
-                    alt="SLTCA Logo"
-                    class="education-logo"
-                  />
-                  <div>
-                    <h4>SLTCA Vocational Training Institute</h4>
-                    <span class="education-date">2022</span>
-                  </div>
-                </div>
-                <p>Certificate in Computer Science</p>
-                <p>Certificate in Graphic Design</p>
-              </div>
-
-              <div class="education-divider"></div>
-
-              <div class="education-item">
-                <div class="education-header">
-                  <img
-                    src="mbv-10.png"
-                    alt="Mahamaya Balika Vidyalaya Logo"
-                    class="education-logo"
-                  />
-                  <div>
-                    <h4>Mahamaya Balika Vidyalaya - Nugegoda</h4>
-                    <span class="education-date">2019 - 2021</span>
-                  </div>
-                </div>
-                <p>
-                  Passed GCE Advanced Level in Engineering Technology Stream
-                  with 3C's
-                </p>
-              </div>
-
-              <div class="education-divider"></div>
-
-              <div class="education-item">
-                <div class="education-header">
-                  <img
-                    src="ghs-10.png"
-                    alt="Girls' High School Logo"
-                    class="education-logo"
-                  />
-                  <div>
-                    <h4>Girls' High School-Mount Lavinia</h4>
-                    <span class="education-date">2008 - 2018</span>
-                  </div>
-                </div>
-                <p>Passed GCE Ordinary Level with 1A, 1B, 6C's and 1S</p>
-              </div>
-            </div>
-          </div>
-        </div>
+            <div class="skills-section animate-slide-up delay-2">
+             <h3>Technical Skills</h3>
+             <div class="skills-grid">
+    <!-- Cybersecurity (First) -->
+    <div class="skill-category">
+      <h4>Cybersecurity</h4>
+      <div class="skill-tags">
+        <span class="skill-tag">Kali Linux</span>
+        <span class="skill-tag">Nmap</span>
+        <span class="skill-tag">Nuclei</span>
+        <span class="skill-tag">Nikto</span>
+        <span class="skill-tag">Subfinder</span>
+        <span class="skill-tag">Network Security</span>
+        <span class="skill-tag">Ethical Hacking</span>
+        <span class="skill-tag">Vulnerability Assessment</span>
+        <span class="skill-tag">OWASP Top 10</span>
+        <span class="skill-tag">Burp Suite</span>
+      </div>
+    </div>
+    
+    <!-- Databases (Second) -->
+    <div class="skill-category">
+      <h4>Databases</h4>
+      <div class="skill-tags">
+        <span class="skill-tag">MySQL</span>
+        <span class="skill-tag">Database Security</span>
+        <span class="skill-tag">SQL Injection Prevention</span>
+      </div>
+    </div>
+    
+    <!-- Frontend (Third) -->
+    <div class="skill-category">
+      <h4>Frontend</h4>
+      <div class="skill-tags">
+        <span class="skill-tag">HTML5</span>
+        <span class="skill-tag">CSS3</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Responsive Design</span>
+        <span class="skill-tag">Web Security</span>
+      </div>
+    </div>
+    
+    <!-- Backend (Fourth) -->
+    <div class="skill-category">
+      <h4>Backend</h4>
+      <div class="skill-tags">
+        <span class="skill-tag">PHP</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">Secure Coding</span>
+      </div>
+    </div>
+    
+    <!-- Tools & Platforms (Fifth) -->
+    <div class="skill-category">
+      <h4>Tools & Platforms</h4>
+      <div class="skill-tags">
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">Android Studio</span>
+        <span class="skill-tag">Figma</span>
+        <span class="skill-tag">VS Code</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">Metasploit</span>
+        <span class="skill-tag">TryHack Me</span>
+        <span class="skill-tag">Hack The Box</span>
+      </div>
+    </div>
+  </div>
+</div>
       </section>
 
       <!-- Projects Section -->
       <section id="projects" class="projects-section">
-        <h2 class="section-title">Project Experience</h2>
-        <div class="projects-grid">
-          <!-- Project 1 - Gallery Café – Web App Project -->
-          <div class="project-card">
-            <div class="project-image-container">
-              <img
-                src="GalleryCafe.png"
-                alt="Cafe Screenshot"
-                class="project-image"
-              />
+        <div class="container">
+          <h2 class="section-title animate-slide-up">My Projects</h2>
+          <p class="section-subtitle animate-slide-up delay-1">
+            Explore my work in web development, mobile applications, and
+            cybersecurity research
+          </p>
+
+          <div class="projects-filter animate-slide-up delay-1">
+            <div class="filter-buttons">
+              <button class="filter-btn active" data-filter="all">
+                All Projects
+              </button>
+              <button class="filter-btn" data-filter="web">
+                Web Development
+              </button>
+              <button class="filter-btn" data-filter="mobile">
+                Mobile Apps
+              </button>
+              <button class="filter-btn" data-filter="cyber">
+                Cybersecurity
+              </button>
+              <button class="filter-btn" data-filter="research">
+                Research
+              </button>
             </div>
-            <div class="project-content">
-              <h3>Gallery Café</h3>
-              <div class="project-description">
-                <h4>Cafe Web Site – Web Application Project</h4>
-                <p>
-                  A dynamic, database-driven website built for The Gallery Café
-                  in Colombo as part of the Web Application Development module
-                  at ICBT. The system enhances customer interaction with
-                  features like table reservations, pre-ordering, menu filters,
-                  and user/admin management.
-                </p>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Gallery Café -->
+            <div class="project-card animate-fade-in" data-category="web">
+              <div class="project-image">
+                <img src="GalleryCafe.png" alt="Gallery Café Web Application" />
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/Rx-vi2002/gallery_cafe.git"
+                    class="view-project"
+                    >View on GitHub</a
+                  >
+                </div>
               </div>
+              <div class="project-info">
+                <h3>Gallery Café</h3>
+                <h4>Cafe Web Site – Web Application Project</h4>
+                <p class="project-description">
+                 A dynamic, database-driven website built for The Gallery Café in Colombo as part of the Web Application Development module at ICBT. 
+                 The system enhances customer interaction with features like table reservations, pre-ordering, menu filters, and user/admin management.
               <ul class="project-features">
                 <li>Register</li>
                 <li>Login</li>
@@ -227,45 +311,42 @@
                 <li>Menu browsing with filters</li>
               </ul>
               <br />
-              <div class="tech-stack">
-                <h4>Tech Stack:</h4>
-                <div class="tech-stack-items">
-                  <span class="tech-stack-item">HTML5</span>
-                  <span class="tech-stack-item">CSS3</span>
-                  <span class="tech-stack-item">JavaScript</span>
-                  <span class="tech-stack-item">PHP</span>
-                  <span class="tech-stack-item">MySQL</span>
+                </p>
+                <div class="project-tags">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                  <span>PHP</span>
+                  <span>MySQL</span>
                 </div>
               </div>
-              <a
-                href="https://github.com/Rx-vi2002/gallery_cafe.git"
-                class="view-details-btn"
-                >View Details</a
-              >
             </div>
-          </div>
 
-          <!-- Project 2 - DogFood App -->
-          <div class="project-card">
-            <div class="project-image-container">
-              <img
-                src="DoggiDelight.png"
-                alt="DogFood App Screenshot"
-                class="project-image"
-              />
-            </div>
-            <div class="project-content">
-              <h3>Doggie Delights</h3>
-              <div class="project-description">
+            <!-- Doggie Delights -->
+            <div
+              class="project-card animate-fade-in delay-1"
+              data-category="mobile"
+            >
+              <div class="project-image">
+                <img src="DoggiDelight.png" alt="Doggie Delights Mobile App" />
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/Rx-vi2002/Dog_Nutrition_App.git"
+                    class="view-project"
+                    >View on GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Doggie Delights</h3>
                 <h4>DogFood App – Mobile App Project</h4>
-                <p>
+                <p class="project-description">
                   An e-commerce Android app for dog owners to shop and learn
                   about dog nutrition. Built for the Mobile App Development
                   module (CSE5011) at ICBT, it features product listings, a cart
                   system, educational content, and user authentication.
                 </p>
-              </div>
-              <ul class="project-features">
+                <ul class="project-features">
                 <li>Register</li>
                 <li>Login</li>
                 <li>Printed Catalog</li>
@@ -273,47 +354,41 @@
                 <li>Educational Content</li>
               </ul>
               <br />
-              <div class="tech-stack">
-                <h4>Tech Stack:</h4>
-                <div class="tech-stack-items">
-                  <span class="tech-stack-item">Java</span>
-                  <span class="tech-stack-item">XML</span>
-                  <span class="tech-stack-item">Firebase</span>
-                  <span class="tech-stack-item">Volley</span>
-                  <span class="tech-stack-item">RecyclerView</span>
-                  <span class="tech-stack-item">Android Studio</span>
+                <div class="project-tags">
+                  <span>Java</span>
+                  <span>XML</span>
+                  <span>Firebase</span>
+                  <span>Android Studio</span>
                 </div>
               </div>
-              <a
-                href="https://github.com/Rx-vi2002/Dog_Nutrition_App.git"
-                class="view-details-btn"
-                >View Details</a
-              >
             </div>
-          </div>
 
-          <!-- Project 3 - Blood Donation System -->
-          <div class="project-card">
-            <div class="project-image-container">
-              <img
-                src="BloodDonation.png"
-                alt="Blood Donation System Screenshot"
-                class="project-image"
-              />
-            </div>
-            <div class="project-content">
-              <h3>DonorLink</h3>
-              <div class="project-description">
+            <!-- DonorLink -->
+            <div
+              class="project-card animate-fade-in delay-2"
+              data-category="web"
+            >
+              <div class="project-image">
+                <img src="BloodDonation.png" alt="Blood Donation System" />
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/Rx-vi2002/Blood_Donation_System.git"
+                    class="view-project"
+                    >View on GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>DonorLink</h3>
                 <h4>Blood Donation System Website – Web Application Project</h4>
-                <p>
+                <p class="project-description">
                   A web-based platform connecting blood donors, recipients, and
                   hospitals. Developed as a group project for the Year 1
                   Semester 2 Internet and Web Technologies module at SLIIT.
                   Features include appointment scheduling and an admin dashboard
                   for managing donors and blood drives.
                 </p>
-              </div>
-              <ul class="project-features">
+                <ul class="project-features">
                 <li>Register</li>
                 <li>Login</li>
                 <li>Book Appointments</li>
@@ -322,46 +397,42 @@
                 <li>Manage Donor Data</li>
               </ul>
               <br />
-              <div class="tech-stack">
-                <h4>Tech Stack:</h4>
-                <div class="tech-stack-items">
-                  <span class="tech-stack-item">HTML5</span>
-                  <span class="tech-stack-item">CSS3</span>
-                  <span class="tech-stack-item">JavaScript</span>
-                  <span class="tech-stack-item">PHP</span>
-                  <span class="tech-stack-item">MySQL</span>
+                <div class="project-tags">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                  <span>PHP</span>
+                  <span>MySQL</span>
                 </div>
               </div>
-              <a
-                href="https://github.com/Rx-vi2002/Blood_Donation_System.git"
-                class="view-details-btn"
-                >View Details</a
-              >
             </div>
-          </div>
 
-          <!-- Project 4 - Zero Trust Architecture Research -->
-          <div class="project-card">
-            <div class="project-image-container">
-              <img
-                src="ZeroTrust.png"
-                alt="Zero Trust Architecture"
-                class="project-image"
-              />
-            </div>
-            <div class="project-content">
-              <h3>Zero Trust Architecture</h3>
-              <div class="project-description">
-                <h4>Research Paper</h4>
-                <p>
-                  A comprehensive study on Zero Trust Architecture (ZTA),
-                  completed for the Introduction to Cyber Security (IE2022)
-                  module at SLIIT. The paper explores ZTA's core principles,
-                  compares it with traditional models, and examines future
-                  trends like AI integration and quantum-resistant security.
-                </p>
+            <!-- Zero Trust Architecture -->
+            <div
+              class="project-card animate-fade-in"
+              data-category="cyber research"
+            >
+              <div class="project-image">
+                <img
+                  src="ZeroTrust.png"
+                  alt="Zero Trust Architecture Research"
+                />
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/Rx-vi2002/Ruvindi-Wickramasinghe/blob/main/IT23839274.pdf"
+                    class="view-project"
+                    >View Paper</a
+                  >
+                </div>
               </div>
-              <ul class="project-features">
+              <div class="project-info">
+                <h3>Zero Trust Architecture</h3>
+                <p class="project-description">
+                  Comprehensive research paper on Zero Trust Architecture
+                  exploring core principles, benefits, challenges, and future
+                  trends in cybersecurity.
+                </p>
+                 <ul class="project-features">
                 <li>Abstract</li>
                 <li>Evolution Of The Topic</li>
                 <li>Core Principles of Zero Trust Architecture</li>
@@ -370,161 +441,878 @@
                 <li>Challenge and Limitation of Zero Trust Architecture</li>
                 <li>Future Developments In This Area</li>
               </ul>
-              <a
-                href="https://github.com/Rx-vi2002/Ruvindi-Wickramasinghe/blob/main/IT23839274.pdf"
-                class="view-details-btn"
-                >View Details</a
-              >
+              </br>
+                <div class="project-tags">
+                  <span>Cybersecurity</span>
+                  <span>Research</span>
+                  <span>Network Security</span>
+                </div>
+              </div>
             </div>
-          </div>
 
-          <!-- Project 5 - Report on Linux System Administration -->
-          <div class="project-card">
-            <div class="project-image-container">
-              <img
-                src="Linux.png"
-                alt="Linux System Administration"
-                class="project-image"
-              />
-            </div>
-            <div class="project-content">
-              <h3>Linux System Administration</h3>
-              <div class="project-description">
-                <h4>Report</h4>
-                <p>
-                  A hands-on project for the IE2012: Systems and Network
+            <!-- Linux System Administration -->
+            <div
+              class="project-card animate-fade-in delay-1"
+              data-category="cyber"
+            >
+              <div class="project-image">
+                <img src="Linux.png" alt="Linux System Administration" />
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/Rx-vi2002/Ruvindi-Wickramasinghe/blob/main/Report%20on%20Linux%20System%20Administration.pdf"
+                    class="view-project"
+                    >View Report</a
+                  >
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Linux System Administration</h3>
+                <p class="project-description">
+                 A hands-on project for the IE2012: Systems and Network
                   Programming module at SLIIT. Covered Linux VM setup, network
                   services (DHCP, DNS, NTP), server deployments (Apache,
                   Postfix), firewall rules, secure SSH, and GDB-based debugging.
                 </p>
-              </div>
-              <ul class="project-features">
+                <ul class="project-features">
                 <li>Basic of Linux Environments</li>
                 <li>DHCP, DNS and NTP Services</li>
                 <li>Security and Other Services</li>
                 <li>Linux GDB</li>
               </ul>
               <br />
-              <div class="tech-stack">
-                <h4>Tech Stack:</h4>
-                <div class="tech-stack-items">
-                  <span class="tech-stack-item">Kali-Linux</span>
-                  <span class="tech-stack-item">Ubuntu</span>
+                <div class="project-tags">
+                  <span>Linux</span>
+                  <span>System Administration</span>
+                  <span>Network Security</span>
                 </div>
               </div>
-              <a
-                href="https://github.com/Rx-vi2002/Ruvindi-Wickramasinghe/blob/main/Report%20on%20Linux%20System%20Administration.pdf"
-                class="view-details-btn"
-                >View Details</a
-              >
             </div>
-          </div>
 
-          <!-- Project 6 - My Portfolio Projects -->
-          <div class="project-card">
-            <div class="project-image-container">
-              <img
-                src="Portfolio.png"
-                alt="Ruvindi Portfolio"
-                class="project-image"
-              />
-            </div>
-            <div class="project-content">
-              <h3>Personal Portfolio</h3>
-              <div class="project-description">
-                <h4>Web Application Project</h4>
-                <p>
+            <!-- Personal Portfolio -->
+            <div
+              class="project-card animate-fade-in delay-2"
+              data-category="web"
+            >
+              <div class="project-image">
+                <img src="Portfolio.png" alt="Personal Portfolio" />
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/Rx-vi2002/Ruvindi-Wickramasinghe.git"
+                    class="view-project"
+                    >View on GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Personal Portfolio</h3>
+                <p class="project-description">
                   This portfolio was built using HTML5, CSS3, and JavaScript,
                   and is hosted on GitHub Pages for reliable and fast
                   deployment. I designed the layout with a focus on clarity,
                   responsiveness, and a minimalist aesthetic, ensuring a smooth
                   browsing experience across devices.
                 </p>
-              </div>
-              <ul class="project-features">
+                <ul class="project-features">
                 <li>Home Section</li>
                 <li>About Section</li>
                 <li>Project Showcase</li>
+                <li>Certification Showcase</li>
+                <li>Atricles Showcase</li>
                 <li>Contact Section</li>
                 <li>GitHub Integration</li>
                 <li>Skills & Tools Section</li>
                 <li>Resume Download Option</li>
               </ul>
               <br />
-              <div class="tech-stack">
-                <h4>Tech Stack:</h4>
-                <div class="tech-stack-items">
-                  <span class="tech-stack-item">Figma</span>
-                  <span class="tech-stack-item">HTML5</span>
-                  <span class="tech-stack-item">CSS3</span>
-                  <span class="tech-stack-item">JavaScript</span>
-                  <span class="tech-stack-item">Git + GitHub Pages</span>
-                  <span class="tech-stack-item">Forms</span>
+                <div class="project-tags">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                  <span>GitHub Pages</span>
                 </div>
               </div>
-              <a
-                href="https://github.com/Rx-vi2002/Ruvindi-Wickramasinghe.git"
-                class="view-details-btn"
-                >View Details</a
-              >
             </div>
+
+            <!-- Web Security Bug Bounty Project -->
+            <div
+              class="project-card animate-fade-in delay-1"
+              data-category="cyber"
+            >
+              <div class="project-image">
+                <img src="BugBountyReport.png" alt="Bug Bounty Report" />
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/Rx-vi2002/Ruvindi-Wickramasinghe/blob/main/BugBounty_Report.pdf"
+                    class="view-project"
+                    >View Report</a
+                  >
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Bug Bounty Project</h3>
+                <p class="project-description">
+                Completed a hands-on web security project assessing Deribit.com, applying 
+                ethical hacking techniques including reconnaissance, vulnerability scanning, 
+                and manual testing to identify and document security vulnerabilities.
+                </p>
+                <ul class="project-features">
+                <li>Performed reconnaissance using Sublist3r, Httprobe, and Nmap.</li>
+                <li>onducted vulnerability scans with Nikto, Nuclei, and OWASP ZAP.</li>
+                <li>Identified critical vulnerabilities including IP disclosure.</li>
+                <li>Validated findings manually and tested SQL injection with SQLmap.</li>
+              </ul>
+              <br />
+                <div class="project-tags">
+                  <span>Linux</span>
+                  <span>System Administration</span>
+                  <span>Network Security</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications Section -->
+<section id="certifications" class="certifications-section">
+  <div class="container">
+    <h2 class="section-title animate-slide-up">
+      Certifications & Badges
+    </h2>
+    <p class="section-subtitle animate-slide-up delay-1">
+      Professional certifications and achievements in technology and cybersecurity
+    </p>
+
+    <div class="certifications-grid">
+      <!-- Certificate 1 (Advent of Cyber 2025) -->
+      <div class="cert-card animate-slide-up">
+        <div class="cert-image-container">
+          <img src="certificates/AOC.png" alt="
+Advent of Cyber Certificate" class="cert-image">
+          <div class="cert-overlay">
+            <button class="view-cert-btn" data-cert="Advent-of-Cyber">
+              <i class="fas fa-expand"></i> View Full
+            </button>
+          </div>
+        </div>
+        <div class="cert-details">
+          <div class="cert-header">
+            <div class="cert-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div>
+              <h3>
+Advent of Cyber 2025</h3>
+              <p class="cert-issuer">TryHackMe</p>
+            </div>
+          </div>
+          <p class="cert-description">
+            Proven understanding of cyber security fundamentals. Has shown
+consistency, tenacity & continuous learning.
+
+          </p>
+          <div class="cert-meta">
+            <span class="cert-date">
+              <i class="far fa-calendar"></i> Issued 26th December 2025
+            </span>
+            <span class="cert-id">
+              <i class="fas fa-hashtag"></i> ID: THM-5BU5MHEA7S
+            </span>
+          </div>
+          <div class="cert-actions">
+            <a href="certificates/AOC.png" class="cert-action-btn view-image-btn" target="_blank">
+              <i class="fas fa-eye"></i> View Image
+            </a>
+            <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-5BU5MHEA7S.pdf" class="cert-action-btn verify-btn" target="_blank">
+              <i class="fas fa-external-link-alt"></i> Verify Online
+            </a>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate 2 (Certified Cybersecurity Educator Professional) -->
+      <div class="cert-card animate-slide-up delay-1">
+        <div class="cert-image-container">
+          <img src="certificates/CCEP.png" alt="Frontend Development Certificate" class="cert-image">
+          <div class="cert-overlay">
+            <button class="view-cert-btn" data-cert="frontend-development">
+              <i class="fas fa-expand"></i> View Full
+            </button>
+          </div>
+        </div>
+        <div class="cert-details">
+          <div class="cert-header">
+            <div class="cert-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div>
+              <h3>Certified Cybersecurity Educator Professional</h3>
+              <p class="cert-issuer">Red Team Leaders</p>
+            </div>
+          </div>
+          <p class="cert-description">
+            A certification verifying expertise in cybersecurity instruction and effective training methodologies.
+          </p>
+          <div class="cert-meta">
+            <span class="cert-date">
+              <i class="far fa-calendar"></i> Issued 15th December 2025
+            </span>
+            <span class="cert-id">
+              <i class="fas fa-hashtag"></i> ID: 123b12b7b716c497
+            </span>
+          </div>
+          <div class="cert-actions">
+            <a href="certificates/CCEP.png" class="cert-action-btn view-image-btn" target="_blank">
+              <i class="fas fa-eye"></i> View Image
+            </a>
+            <a href="https://courses.redteamleaders.com/exam-completion/123b12b7b716c497" class="cert-action-btn verify-btn" target="_blank">
+              <i class="fas fa-external-link-alt"></i> Verify Online
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate 3 (Introduction to Bug Bounty) -->
+      <div class="cert-card animate-slide-up delay-2">
+        <div class="cert-image-container">
+          <img src="certificates/BugBounty.png" alt="Introduction to Bug Bounty Certificate" class="cert-image">
+          <div class="cert-overlay">
+            <button class="view-cert-btn" data-cert="sql-database">
+              <i class="fas fa-expand"></i> View Full
+            </button>
+          </div>
+        </div>
+        <div class="cert-details">
+          <div class="cert-header">
+            <div class="cert-icon">
+              <i class="fas fa-bug"></i>
+            </div>
+            <div>
+              <h3>Introduction to Bug Bounty</h3>
+              <p class="cert-issuer">Red Team Leaders</p>
+            </div>
+          </div>
+          <p class="cert-description">
+            This certificate shows the person finished a beginner's course on bug bounty hunting and learned the basics of finding and reporting security flaws.
+          </p>
+          <div class="cert-meta">
+            <span class="cert-date">
+              <i class="far fa-calendar"></i> Issued 15th December 2025
+            </span>
+            <span class="cert-id">
+              <i class="fas fa-hashtag"></i> ID: 665ba81581a266dd
+            </span>
+          </div>
+          <div class="cert-actions">
+            <a href="certificates/BugBounty.png" class="cert-action-btn view-image-btn" target="_blank">
+              <i class="fas fa-eye"></i> View Image
+            </a>
+            <a href="certificates/BugBounty.pdf" class="cert-action-btn download-btn" download>
+              <i class="fas fa-download"></i> Download PDF
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate 4 (Ethical Hacker)-->
+      <div class="cert-card animate-slide-up">
+        <div class="cert-image-container">
+          <img src="certificates/EthicalHacker.png" alt="Graphic Design Certificate" class="cert-image">
+          <div class="cert-overlay">
+            <button class="view-cert-btn" data-cert="graphic-design">
+              <i class="fas fa-expand"></i> View Full
+            </button>
+          </div>
+        </div>
+        <div class="cert-details">
+          <div class="cert-header">
+            <div class="cert-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div>
+              <h3>Ethical Hacker</h3>
+              <p class="cert-issuer">Cisco Networking Academy</p>
+            </div>
+          </div>
+          <p class="cert-description">
+            Learn the art of offensive security to uncover cyber threats and vulnerabilities before the cybercriminals do.
+          </p>
+          <div class="cert-meta">
+            <span class="cert-date">
+              <i class="far fa-calendar"></i> Issued 19 Jul 2025
+            </span>
+            <span class="cert-id">
+              <i class="fas fa-hashtag"></i> Cert No: Null
+            </span>
+          </div>
+          <div class="cert-actions">
+            <a href="certificates/EthicalHacker.png" class="cert-action-btn view-image-btn" target="_blank">
+              <i class="fas fa-eye"></i> View Image
+            </a>
+            <a href="https://www.credly.com/badges/9afa9aba-0b88-445e-be6f-68fbba271dc7/public_url" class="cert-action-btn verify-btn" target="_blank">
+              <i class="fas fa-external-link-alt"></i> Credly Badge
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate 5 (Python for Beginners)-->
+      <div class="cert-card animate-slide-up delay-1">
+        <div class="cert-image-container">
+          <img src="certificates/Python_for_Beginners_E-Certificate.png" alt="Computer Science Certificate" class="cert-image">
+          <div class="cert-overlay">
+            <button class="view-cert-btn" data-cert="computer-science">
+              <i class="fas fa-expand"></i> View Full
+            </button>
+          </div>
+        </div>
+        <div class="cert-details">
+          <div class="cert-header">
+            <div class="cert-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div>
+              <h3>Python for Beginners</h3>
+              <p class="cert-issuer">University of Moratuwa</p>
+            </div>
+          </div>
+          <p class="cert-description">
+            This certificate confirms completion of a beginner Python programming course from the University of Moratuwa.
+          </p>
+          <div class="cert-meta">
+            <span class="cert-date">
+              <i class="far fa-calendar"></i> Issued 11 Jul 2025
+            </span>
+            <span class="cert-id">
+              <i class="fas fa-hashtag"></i> Verification Code: 2K1B9tSV0e
+            </span>
+          </div>
+          <div class="cert-actions">
+            <a href="certificates/Python_for_Beginners_E-Certificate.png" class="cert-action-btn view-image-btn" target="_blank">
+              <i class="fas fa-eye"></i> View Image
+            </a>
+            <a href="https://open.uom.lk/verify" class="cert-action-btn verify-btn" target="_blank">
+              <i class="fas fa-external-link-alt"></i> Verify Online
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate 6 (Exploring Networking with Cisco Packet Tracer) -->
+      <div class="cert-card animate-slide-up">
+        <div class="cert-image-container">
+          <img src="certificates/Exploring Networking with Cisco Packet Tracer.png" alt="Graphic Design Certificate" class="cert-image">
+          <div class="cert-overlay">
+            <button class="view-cert-btn" data-cert="graphic-design">
+              <i class="fas fa-expand"></i> View Full
+            </button>
+          </div>
+        </div>
+        <div class="cert-details">
+          <div class="cert-header">
+            <div class="cert-icon">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <div>
+              <h3>Exploring Networking with Cisco Packet Tracer</h3>
+              <p class="cert-issuer">Cisco Networking Academy</p>
+            </div>
+          </div>
+          <p class="cert-description">
+            Practice using Cisco Packet Tracer to set up, manage, and monitor a branch office network.
+          </p>
+          <div class="cert-meta">
+            <span class="cert-date">
+              <i class="far fa-calendar"></i> Issued 18 Jun 2025
+            </span>
+            <span class="cert-id">
+              <i class="fas fa-hashtag"></i> Cert No: Null
+            </span>
+          </div>
+          <div class="cert-actions">
+            <a href="certificates/Exploring Networking with Cisco Packet Tracer.png" class="cert-action-btn view-image-btn" target="_blank">
+              <i class="fas fa-eye"></i> View Image
+            </a>
+            <a href="certificates/Exploring_Networking_with_Cisco_Packet_Tracer_certificate_ruvindiwickramasinghe100-gmail-com_3c29fa5a-981d-44c4-8c17-135e313e86f4.pdf" class="cert-action-btn download-btn" download>
+              <i class="fas fa-download"></i> Download PDF
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate 7 (Introduction to the Threat Landscape 3.0) -->
+      <div class="cert-card animate-slide-up delay-2">
+        <div class="cert-image-container">
+          <img src="certificates/Introduction to the Threat Landscape 3.0.png" alt="Cisco Network Security Certificate" class="cert-image">
+          <div class="cert-overlay">
+            <button class="view-cert-btn" data-cert="cisco-network">
+              <i class="fas fa-expand"></i> View Full
+            </button>
+          </div>
+        </div>
+        <div class="cert-details">
+          <div class="cert-header">
+            <div class="cert-icon">
+              <i class="fas fa-shield-virus"></i>
+            </div>
+            <div>
+              <h3>Introduction to the Threat Landscape 3.0</h3>
+              <p class="cert-issuer">Fortinet</p>
+            </div>
+          </div>
+          <p class="cert-description">
+            The Introduction to the Threat Landscape 3.0 badge recognizes a fundamental understanding of the cyber threat landscape.
+          </p>
+          <div class="cert-meta">
+            <span class="cert-date">
+              <i class="far fa-calendar"></i> Issued 17 June 2025
+            </span>
+            <span class="cert-id">
+              <i class="fas fa-hashtag"></i> ID: a67c400a-b13c-4733-a3a5-494b941caf4d
+            </span>
+          </div>
+          <div class="cert-actions">
+            <a href="certificates/Introduction to the Threat Landscape 3.0.png" class="cert-action-btn view-image-btn" target="_blank">
+              <i class="fas fa-eye"></i> View Image
+            </a>
+            <a href="https://www.credly.com/badges/a67c400a-b13c-4733-a3a5-494b941caf4d/public_url" class="cert-action-btn verify-btn" target="_blank">
+              <i class="fas fa-external-link-alt"></i> Credly Badge
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate 8 (Getting Started with Cisco Packet Tracer)-->
+      <div class="cert-card animate-slide-up delay-2">
+        <div class="cert-image-container">
+          <img src="certificates/Getting Started with Cisco Packet Tracer.png" alt="Cisco Network Security Certificate" class="cert-image">
+          <div class="cert-overlay">
+            <button class="view-cert-btn" data-cert="cisco-network">
+              <i class="fas fa-expand"></i> View Full
+            </button>
+          </div>
+        </div>
+        <div class="cert-details">
+          <div class="cert-header">
+            <div class="cert-icon">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <div>
+              <h3>Getting Started with Cisco Packet Tracer</h3>
+              <p class="cert-issuer">Cisco Networking Academy</p>
+            </div>
+          </div>
+          <p class="cert-description">
+            Your on-ramp to Cisco Packet Tracer. Get familiar with the simulation environment and download the latest version.
+
+          </p>
+          <div class="cert-meta">
+            <span class="cert-date">
+              <i class="far fa-calendar"></i> Issued 15 Jun 2025
+            </span>
+            <span class="cert-id">
+              <i class="fas fa-hashtag"></i> ID: Null
+            </span>
+          </div>
+          <div class="cert-actions">
+            <a href="certificates/Getting Started with Cisco Packet Tracer.png" class="cert-action-btn view-image-btn" target="_blank">
+              <i class="fas fa-eye"></i> View Image
+            </a>
+             <a href="certificates/Getting_Started_with_Cisco_Packet_Tracer_certificate.pdf" class="cert-action-btn download-btn" download>
+              <i class="fas fa-download"></i> Download PDF
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate 9 (AI for Beginners)-->
+      <div class="cert-card animate-slide-up delay-2">
+        <div class="cert-image-container">
+          <img src="certificates/AI for Beginners.png" alt="Cisco Network Security Certificate" class="cert-image">
+          <div class="cert-overlay">
+            <button class="view-cert-btn" data-cert="cisco-network">
+              <i class="fas fa-expand"></i> View Full
+            </button>
+          </div>
+        </div>
+        <div class="cert-details">
+          <div class="cert-header">
+            <div class="cert-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div>
+              <h3>AI for Beginners</h3>
+              <p class="cert-issuer">HP LIFE</p>
+            </div>
+          </div>
+          <p class="cert-description">
+            By completing this course, the above-named student has gained a basic understanding of
+the impact of artificial intelligence (AI) on the technological landscape.
+          </p>
+          <div class="cert-meta">
+            <span class="cert-date">
+              <i class="far fa-calendar"></i> Issued 17 Jun 2025
+            </span>
+            <span class="cert-id">
+              <i class="fas fa-hashtag"></i> ID: 6e2be36e-dd68-4af2-81fb-1e7b487e4604
+            </span>
+          </div>
+          <div class="cert-actions">
+            <a href="certificates/AI for Beginners.png" class="cert-action-btn view-image-btn" target="_blank">
+              <i class="fas fa-eye"></i> View Image
+            </a>
+            <a href="https://www.life-global.org/certificate/6e2be36e-dd68-4af2-81fb-1e7b487e4604" class="cert-action-btn verify-btn" target="_blank">
+              <i class="fas fa-external-link-alt"></i> Verify Online
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate 10 (Introduction to Cybersecurity) -->
+      <div class="cert-card animate-slide-up delay-2">
+        <div class="cert-image-container">
+          <img src="certificates/IntroductionTo Cybersecurity.png" alt="Cisco Network Security Certificate" class="cert-image">
+          <div class="cert-overlay">
+            <button class="view-cert-btn" data-cert="cisco-network">
+              <i class="fas fa-expand"></i> View Full
+            </button>
+          </div>
+        </div>
+        <div class="cert-details">
+          <div class="cert-header">
+            <div class="cert-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div>
+              <h3>Introduction to Cybersecurity</h3>
+              <p class="cert-issuer">Cisco Networking Academy</p>
+            </div>
+          </div>
+          <p class="cert-description">
+            Explore the exciting field of cybersecurity and why cybersecurity is a future-proof career.
+          </p>
+          <div class="cert-meta">
+            <span class="cert-date">
+              <i class="far fa-calendar"></i> Issued 24 Nov 2024
+
+            </span>
+            <span class="cert-id">
+              <i class="fas fa-hashtag"></i> ID: a22f585d-4b78-41ca-9eb8-767223a73c53
+            </span>
+          </div>
+          <div class="cert-actions">
+            <a href="certificates/IntroductionTo Cybersecurity.png" class="cert-action-btn view-image-btn" target="_blank">
+              <i class="fas fa-eye"></i> View Image
+            </a>
+            <a href="https://www.credly.com/badges/a22f585d-4b78-41ca-9eb8-767223a73c53/public_url" class="cert-action-btn verify-btn" target="_blank">
+              <i class="fas fa-external-link-alt"></i> Credly Badge
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Badge 1 (3 Day Streak Badge) -->
+      <div class="cert-card animate-slide-up delay-2">
+        <div class="cert-image-container">
+          <img src="certificates/THM-3DayStreak.png" alt="Cisco Network Security Certificate" class="cert-image">
+          <div class="cert-overlay">
+            <button class="view-cert-btn" data-cert="cisco-network">
+              <i class="fas fa-expand"></i> View Full
+            </button>
+          </div>
+        </div>
+        <div class="cert-details">
+          <div class="cert-header">
+            <div class="cert-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div>
+              <h3>3 Day Streak Badge</h3>
+              <p class="cert-issuer">TryHackMe</p>
+            </div>
+          </div>
+          <p class="cert-description">
+            Achieving a 3 day hacking streak.
+          </p>
+          <div class="cert-meta">
+            <span class="cert-date">
+              <i class="far fa-calendar"></i> Issued November 20, 2025
+
+            </span>
+          </div>
+          <div class="cert-actions">
+            <a href="certificates/THM-3DayStreak(1).png" class="cert-action-btn view-image-btn" target="_blank">
+              <i class="fas fa-eye"></i> View Image
+            </a>
+            <a href="https://tryhackme.com/Rx2002/badges/3-day-streak?utm_campaign=social_share&utm_medium=social&utm_content=badge&utm_source=copy&sharerId=68c80396fe8358b648d26d0f" class="cert-action-btn verify-btn" target="_blank">
+              <i class="fas fa-external-link-alt"></i> Verify Online
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Badge 2 (7 Day Streak Badge) -->
+      <div class="cert-card animate-slide-up delay-2">
+        <div class="cert-image-container">
+          <img src="certificates/THM-7DayStreak.png" alt="Cisco Network Security Certificate" class="cert-image">
+          <div class="cert-overlay">
+            <button class="view-cert-btn" data-cert="cisco-network">
+              <i class="fas fa-expand"></i> View Full
+            </button>
+          </div>
+        </div>
+        <div class="cert-details">
+          <div class="cert-header">
+            <div class="cert-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div>
+              <h3>7 Day Streak Badge</h3>
+              <p class="cert-issuer">TryHackMe</p>
+            </div>
+          </div>
+          <p class="cert-description">
+            Achieving a 7 day hacking streak.
+          </p>
+          <div class="cert-meta">
+            <span class="cert-date">
+              <i class="far fa-calendar"></i> Issued November 24, 2025
+
+            </span>
+          </div>
+          <div class="cert-actions">
+            <a href="certificates/THM-7DayStreak(1).png" class="cert-action-btn view-image-btn" target="_blank">
+              <i class="fas fa-eye"></i> View Image
+            </a>
+            <a href="https://tryhackme.com/Rx2002/badges/7-day-streak?utm_campaign=social_share&utm_medium=social&utm_content=badge&utm_source=copy&sharerId=68c80396fe8358b648d26d0f" class="cert-action-btn verify-btn" target="_blank">
+              <i class="fas fa-external-link-alt"></i> Verify Online
+            </a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- Certificate Modal -->
+<div class="cert-modal">
+  <div class="modal-overlay"></div>
+  <div class="modal-container">
+    <button class="modal-close">&times;</button>
+    <div class="modal-image-container">
+      <img src="" alt="Certificate" class="modal-cert-image">
+      <div class="modal-nav">
+        <button class="nav-btn prev-btn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="nav-btn next-btn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+    <div class="modal-info">
+      <h3 class="modal-title"></h3>
+      <div class="modal-meta">
+        <span class="modal-issuer"></span>
+        <span class="modal-date"></span>
+      </div>
+      <div class="modal-actions">
+        <a href="#" class="modal-action-btn download-modal-btn" download>
+          <i class="fas fa-download"></i> Download
+        </a>
+        <a href="#" class="modal-action-btn verify-modal-btn" target="_blank">
+          <i class="fas fa-external-link-alt"></i> Verify
+        </a>
+        <button class="modal-action-btn close-modal-btn">
+          <i class="fas fa-times"></i> Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- Articles Section -->
+      <section id="articles" class="articles-section">
+        <div class="container">
+          <h2 class="section-title animate-slide-up">Latest Articles</h2>
+          <p class="section-subtitle animate-slide-up delay-1">
+            Insights on cybersecurity, technology, and development
+          </p>
+
+          <div class="articles-grid">
+            <article class="article-card animate-fade-in">
+              <div class="article-image">
+                <img
+                  src="FileUploadVulnerabilitie.png"
+                  alt="File Upload Vulnerabilitie"
+                />
+              </div>
+              <div class="article-content">
+                <div class="article-meta">
+                  <span class="article-category">Cybersecurity</span>
+                  <span class="article-date">Nov 18, 2025</span>
+                </div>
+                <h3>
+                  File Upload Vulnerabilities — A Complete Step‑by‑Step Guide
+                </h3>
+                <p>
+                  The article briefly explains how insecure file upload features can be abused by attackers and highlights 
+                  common file upload vulnerabilities and their security risks.
+
+                </p>
+                <a
+                  href="https://medium.com/@ruvindiwickramasinghe100/file-upload-vulnerabilities-a-complete-step-by-step-guide-b0b24b728b31"
+                  class="article-link"
+                >
+                  Read on Medium <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="article-card animate-fade-in delay-1">
+              <div class="article-image">
+                <img
+                  src="Natas.png"
+                  alt="Natas Wargame"
+                />
+              </div>
+              <div class="article-content">
+                <div class="article-meta">
+                  <span class="article-category">Cybersecurity</span>
+                  <span class="article-date">Mar 15, 2025</span>
+                </div>
+                <h3>Natas Wargame Walkthrough (Level 1–10)</h3>
+                <p>
+                  This walkthrough covers Natas Levels 1–10, 
+                  highlighting fundamental server-side web security flaws and teaching practical 
+                  techniques for identifying and exploiting insecure web application logic.
+                </p>
+                <a
+                  href="https://medium.com/@ruvindiwickramasinghe100/natas-wargame-walkthrough-level-1-10-b6d45f505728"
+                  class="article-link"
+                >
+                  Read on Medium <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="article-card animate-fade-in delay-2">
+              <div class="article-image">
+                <img
+                  src="Bandit.png"
+                  alt="Bandit Game"
+                />
+              </div>
+              <div class="article-content">
+                <div class="article-meta">
+                  <span class="article-category">Cybersecurity</span>
+                  <span class="article-date">Mar 6, 2025</span>
+                </div>
+                <h3>Bandit Game Walkthrough (Level 01–15)</h3>
+                <p>
+                  This walkthrough explores OverTheWire’s Bandit wargame (Levels 0–15), 
+                  highlighting practical Linux commands and techniques commonly used in ethical hacking and cybersecurity.
+                </p>
+                <a
+                  href="https://medium.com/@ruvindiwickramasinghe100/overthewire-bandit-game-walkthrough-level-01-15-a7100cf2a112"
+                  class="article-link"
+                >
+                  Read on Medium <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
       <!-- Contact Section -->
       <section id="contact" class="contact-section">
-        <h2 class="section-title">Contact Me!</h2>
-        <div class="contact-container">
-          <div class="contact-columns">
-            <div class="contact-info-column">
-              <h3>Get in Touch</h3>
-              <div class="contact-info">
-                <div class="contact-item">
+        <div class="container">
+          <h2 class="section-title animate-slide-up">Get In Touch</h2>
+          <p class="section-subtitle animate-slide-up delay-1">
+            Let's discuss opportunities or collaborate on projects
+          </p>
+
+          <div class="contact-content">
+            <div class="contact-info animate-slide-up delay-1">
+              <div class="contact-item">
+                <div class="contact-icon">
                   <i class="fas fa-envelope"></i>
-                  <div>
-                    <h4>Email</h4>
-                    <p>pburuvindi@gmail.com</p>
-                  </div>
                 </div>
-                <div class="contact-item">
+                <div class="contact-details">
+                  <h3>Email</h3>
+                  <p>pburuvindi@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
                   <i class="fas fa-phone"></i>
-                  <div>
-                    <h4>Phone</h4>
-                    <p>+94 70 539 6714</p>
-                  </div>
                 </div>
-                <div class="contact-item">
+                <div class="contact-details">
+                  <h3>Phone</h3>
+                  <p>+94 70 539 6714</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
                   <i class="fas fa-map-marker-alt"></i>
-                  <div>
-                    <h4>Location</h4>
-                    <p>Piliyandala, Colombo</p>
-                  </div>
                 </div>
+                <div class="contact-details">
+                  <h3>Location</h3>
+                  <p>Piliyandala, Colombo, Sri Lanka</p>
+                </div>
+              </div>
+
+              <div class="social-links">
+                <a
+                  href="https://www.linkedin.com/in/ruvindi-wickramasinghe"
+                  class="social-link"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Rx-vi2002" class="social-link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/_rx_vi_/"
+                  class="social-link"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="https://medium.com/@ruvindiwickramasinghe100"
+                  class="social-link"
+                >
+                  <i class="fab fa-medium"></i>
+                </a>
+                <a
+                  href="https://ruugraphics2002.blogspot.com/"
+                  class="social-link"
+                >
+                  <i class="fab fa-blogger-b"></i>
+                </a>
               </div>
             </div>
 
-            <div class="contact-form-column">
-              <h3>Send Me a Message</h3>
+            <div class="contact-form animate-slide-up delay-2">
               <form
                 id="contact-form"
-                class="contact-form"
                 action="https://formspree.io/f/mqabrljk"
                 method="POST"
               >
                 <div class="form-group">
                   <input
                     type="text"
-                    id="first-name"
                     name="first-name"
                     placeholder="First Name"
                     required
                   />
-                </div>
-                <div class="form-group">
                   <input
                     type="text"
-                    id="last-name"
                     name="last-name"
                     placeholder="Last Name"
                     required
@@ -532,30 +1320,24 @@
                 </div>
                 <div class="form-group">
                   <input
-                    type="tel"
-                    id="contact-no"
-                    name="contact-no"
-                    placeholder="Contact No"
-                  />
-                </div>
-                <div class="form-group">
-                  <input
                     type="email"
-                    id="email"
                     name="email"
                     placeholder="Email Address"
                     required
                   />
+                  <input type="tel" name="phone" placeholder="Phone Number" />
                 </div>
                 <div class="form-group">
                   <textarea
-                    id="message"
                     name="message"
                     placeholder="Your Message"
+                    rows="5"
                     required
                   ></textarea>
                 </div>
-                <button type="submit" class="btn">Submit</button>
+                <button type="submit" class="btn btn-primary">
+                  <i class="fas fa-paper-plane"></i> Send Message
+                </button>
               </form>
             </div>
           </div>
@@ -563,32 +1345,45 @@
       </section>
     </main>
 
-    <footer>
-      <div class="footer-content">
-        <p>&copy; 2025 Ruvindi Wickramasinghe. All rights reserved.</p>
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/ruvindi-wickramasinghe"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a href="https://github.com/Rx-vi2002"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="https://www.instagram.com/_rx_vi_/"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a href="https://www.facebook.com/share/19WwqttL3h/"
-            ><i class="fab fa-facebook"></i
-          ></a>
-          <a href="https://medium.com/@ruvindiwickramasinghe100"
-            ><i class="fab fa-medium"></i
-          ></a>
-          <a href="https://ruugraphics2002.blogspot.com/"
-            ><i class="fab fa-blogger-b"></i
-          ></a>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <h3>Ruvindi Wickramasinghe</h3>
+            <p>
+              Cybersecurity Undergraduate & Developer passionate about creating
+              secure, innovative solutions through research, development, and
+              continuous learning.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#certifications">Certifications</a></li>
+              <li><a href="#articles">Articles</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h3>Contact Info</h3>
+            <p><i class="fas fa-envelope"></i> pburuvindi@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +94 70 539 6714</p>
+            <p><i class="fas fa-map-marker-alt"></i> Piliyandala, Colombo</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Ruvindi Wickramasinghe. All rights reserved.</p>
+          <p class="footer-note">
+            Built with <i class="fas fa-heart"></i> and modern web technologies
+          </p>
         </div>
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
   </body>
 </html>
